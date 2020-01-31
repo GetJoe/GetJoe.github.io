@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Indeed Map</title>
+  <meta name="author" content="">
+  <meta name="description" content="A python application that shows density of a selected job from indeed's website">
+  <meta name="keywords" content="joe, strutz, software engineering, computer science, indeed, science, programming, jobs, map" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../static/jquery-jvectormap-2.0.3/jquery-jvectormap-2.0.3.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../static/css/style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="../static/jquery-jvectormap-2.0.3/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="../static/jquery-jvectormap-2.0.3/map.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<header>
+			<div id="banner">
+				<h2 class="title">
+					Indeed Job Map
+				</h2>
+			<hr/>
+			</div>
+		</header>
+		
+		<div id="search-container">			
+			<form id="search-form" name="search" method="POST">
+				<input id="search-field" type="text" name="search-box" placeholder="Search A Job Title. . .">
+				<button type="submit" name="search-button">Go</button>
+			</form>
+		</div>
+	
+		<div id="content-container">
+			
+			<div id="map-container">
+				<div id="map"></div>
+			</div>
+		</div>
+
+	  	<div id="nav-container">
+			<nav>
+				<ul id="navigator">
+					<li class="selected">
+						<a href="index.html">Map</a>
+					</li>
+					<li>
+						<a href="about/about.html">About</a>
+					</li>
+					<li>
+						<a href="https://www.github.com">GitHub </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<script src="../static/js/jobNameSearchAJAX.js"></script>
+	<script src="../static/jquery-jvectormap-2.0.3/map-initializer.js"></script>
+</body>
+
+
+
+</html>

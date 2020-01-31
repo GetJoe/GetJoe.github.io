@@ -1,0 +1,159 @@
+html, body{
+	height: 100%
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3{
+  font: normal 175% 'Open Sans', sans-serif;
+  text-shadow: 0 -1px 0 #fff;
+  letter-spacing: 0.5px;
+  margin: 0 0 0px
+}
+.title {
+  text-align: center;
+  overflow: hidden;
+  line-height: 2em
+}
+
+#banner H2 {
+  font: normal 400% 'Open Sans', sans-serif;
+}
+
+hr {
+	display: block;
+    height: 1px;
+	width: 50%;
+    border: 0;
+    border-top: 2px solid #000000;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main, header, footer, #map-container {
+}
+
+#content-container{
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+#search-container{
+	margin-top: 3px;
+	text-align: center;
+}
+
+#search{
+	height: 2rem;
+	width: 500px;
+	font-size: 2em;
+
+}
+
+#search-button{
+	height: 40px;
+	width: 50px;
+}
+
+#map{
+	margin: auto;
+	width: 1000px;
+	height: 750px;
+	display: block;
+}
+ #data-map{
+	margin: auto;
+	width: 1000px;
+	height: 750px;
+	display: none;
+}
+
+#nav-container{
+	margin: 3px;
+	height: 8.75vh;
+	text-align: center;
+	border: 1px solid black;
+}
+
+ul#navigator{
+	margin-top: 1.75%;
+	text-align: center;
+	display: inline-table;
+}
+
+ul#navigator li {
+	padding: 0;
+	text-align: center;
+	list-style: none;
+	display: inline;
+}
+
+ul#navigator li a {
+  font: bold 130% 'Open Sans', sans-serif;
+  padding: 5px 100px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none
+}
+
+ul#navigator li:hover a {
+	color: #A3A3A3;
+}
+
+ul#navigator li.selected a {
+	color: #A3A3A3;
+}
+
+form#search-form{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;	
+}
+form#search-form input{
+
+    font-size: 30px;
+    border: 1px solid grey;
+    width: 550px;
+    height: 52px;
+    display: inline;
+    background: #f1f1f1;
+}
+
+::placeholder{
+	font: normal 100% 'Open Sans', sans-serif;
+}
+
+form#search-form input:placeholder{
+	font: normal 100% 'Open Sans', sans-serif;
+}
+
+form#search-form button {
+	font: normal 100%'Open Sans', sans-serif;
+	padding: 15px;
+	background: #000000;
+	color: white;
+	border: 1px solid grey;
+	border-left: none; 
+	cursor: pointer;
+	vertical-align: top;
+	height: 52px;
+	width: 52px;
+}
+
+form#search-form button:hover {
+  background: #A3A3A3;
+}
+
+form#search-form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
